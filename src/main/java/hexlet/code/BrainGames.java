@@ -7,6 +7,7 @@ public class BrainGames {
         Scanner in = new Scanner(System.in);
         System.out.println("Welcome to the Brain Games!" + "\nMay I have your name?");
         String answer = in.nextLine();
-        System.out.println("Hello, " + answer);
+        System.out.println("Hello, " + answer + "!" + "\nAnswer 'yes' if number even otherwise answer 'no'.");
+        // Дописать логику
     }
 }
