@@ -4,7 +4,8 @@ public class App {
         System.out.println("""
             Please enter the game number and press Enter.
             1 - Greet
-            2 - Exit""");
+            2 - Even
+            3 - Exit""");
         Cli.selectGame();
     }
 }
