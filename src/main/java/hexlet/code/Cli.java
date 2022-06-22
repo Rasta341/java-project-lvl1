@@ -8,15 +8,15 @@ public class Cli {
         switch (answer) {
             case 1:
                 System.out.println("Your choice: 1");
-                System.out.println("Welcome to the Brain Games!" + "\nMay I have your name?");
-                String name = in.next();
-                System.out.println("Hello, " + name + "!");
+                System.out.println("Welcome to the Brain Games!");
                 break;
             case 2:
                 System.out.println("Your choice: 2");
                 BrainGames.brainGames();
                 break;
             case 3:
+                System.out.println("Your choice: 3");
+                Calc.calc();
                 break;
             default: System.out.println("Unknown command, please try again.");
         }

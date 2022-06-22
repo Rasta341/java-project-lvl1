@@ -19,8 +19,8 @@ public class BrainGames {
                     countOfWins++;
                 } else {
                     countOfWins = 0;
-                    System.out.println(answer + " is wrong answer ;(. Correct answer was "
-                        + correctAnswer + ". \nLet's try again, " + name + "!");
+                    System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
+                        + correctAnswer + "'. \nLet's try again, " + name + "!");
                 }
             } else {
                 String correctAnswer = "no";
@@ -29,8 +29,8 @@ public class BrainGames {
                     countOfWins++;
                 } else {
                     countOfWins = 0;
-                    System.out.println(answer + " is wrong answer ;(. Correct answer was "
-                        + correctAnswer + ". \nLet's try again, " + name + "!");
+                    System.out.println("'" + answer + " is wrong answer ;(. Correct answer was '"
+                        + correctAnswer + "'. \nLet's try again, " + name + "!");
                 }
             }
         }
