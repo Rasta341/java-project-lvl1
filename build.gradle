@@ -4,13 +4,13 @@ plugins {
     id 'checkstyle'
 }
 application {
-    mainClass = 'hexlet.code.games.App'
+    mainClass = 'hexlet.code.App'
 }
 run {
     standardInput = System.in
 }
 
-group 'hexlet.code.games'
+group 'hexlet.code'
 version '1.0-SNAPSHOT'
 
 repositories {
