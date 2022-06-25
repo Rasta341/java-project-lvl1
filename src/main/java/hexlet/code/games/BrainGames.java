@@ -1,37 +1,24 @@
 package hexlet.code.games;
-import java.util.Scanner;
+import hexlet.code.Engine;
+
 public class BrainGames {
     public static void brainGames() {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Welcome to the Brain Games!" + "\nMay I have your name?");
-        String name = in.nextLine();
+        Engine.greet();
+        String name = Engine.userName();
         System.out.println("Hello, " + name + "!" + "\nAnswer 'yes' if number even otherwise answer 'no'.");
-        int countOfWins = 0;
-        int needWins = 3;
-        while (countOfWins < needWins) {
+        while (Engine.isWin()) {
             int question = (int) (Math.random() * 10 + 1);
             System.out.println(question);
-            String answer = in.nextLine();
-            if (question % 2 == 0) {
-                String correctAnswer = "yes";
-                if ("yes".equalsIgnoreCase(answer)) {
-                    System.out.println("Correct!");
-                    countOfWins++;
-                } else {
-                    countOfWins = 0;
-                    System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
-                        + correctAnswer + "'. \nLet's try again, " + name + "!");
-                }
+            String userAnswer = Engine.getUserAnswer();
+            String correctAnswer = "yes";
+            Engine.getCorrectAnswer(correctAnswer);
+            if (question % 2 != 0) {
+                correctAnswer = "no";
+            }
+            if (correctAnswer.equalsIgnoreCase(userAnswer)) {
+                Engine.correct();
             } else {
-                String correctAnswer = "no";
-                if ("no".equalsIgnoreCase(answer)) {
-                    System.out.println("Correct!");
-                    countOfWins++;
-                } else {
-                    countOfWins = 0;
-                    System.out.println("'" + answer + " is wrong answer ;(. Correct answer was '"
-                        + correctAnswer + "'. \nLet's try again, " + name + "!");
-                }
+                Engine.wrong();
             }
         }
         System.out.println("Congratulations, " + name + "!");

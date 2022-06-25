@@ -1,17 +1,14 @@
 package hexlet.code.games;
-
-import java.util.Scanner;
+import hexlet.code.Engine;
 
 public class Calc {
     public static void calc() {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Welcome to the Brain Games!" + "\nMay I have your name?");
-        String name = in.nextLine();
-        System.out.println("Hello, " + name + "!" + "\nWhat is the result of the expression?");
+        Engine.greet();
+        String name = Engine.userName();
+        System.out.println("Hello, " + name +  "!" + "\nWhat is the result of the expression?");
         
-        int needWins = 3;
-        int countOfWins = 0;
-        while (countOfWins < needWins) {
+        
+        while (Engine.isWin()) {
             int operation = 1 + (int) (Math.random() * 3);
             int operand1 = (int) (Math.random() * 100);
             int operand2 = (int) (Math.random() * 100);
@@ -32,16 +29,12 @@ public class Calc {
                 default:
                     break;
             }
-            int answer = in.nextInt();
-            System.out.println("Your answer: " + answer);
-            if (answer == result) {
-                System.out.println("Correct!");
-                countOfWins++;
+            Engine.getCorrectAnswer(String.valueOf(result));
+            String userAnswer = Engine.getUserAnswer();
+            if (Integer.parseInt(userAnswer) == result) {
+                Engine.correct();
             } else {
-                System.out.println("'" + answer + "' is wrong answer ;(. "
-                    + "Correct answer is: '" + result + "'. "
-                    + "\nLet's try again, " + name + "!");
-                countOfWins = 0;
+                Engine.wrong();
             }
         }
         System.out.println("Congratulations, " + name + "!");
