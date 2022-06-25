@@ -48,4 +48,7 @@ public class Engine {
         System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '"
             + correctAnswer + "'. \nLet's try again, " + username + "!");
     }
+    public static void congrats(){
+        System.out.println("Congratulations, " + username + "!");
+    }
 }

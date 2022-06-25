@@ -1,6 +1,7 @@
 package hexlet.code;
 import hexlet.code.games.BrainGames;
 import hexlet.code.games.Calc;
+import hexlet.code.games.GCD;
 
 import java.util.Scanner;
 
@@ -20,6 +21,10 @@ public class Cli {
             case 3:
                 System.out.println("Your choice: 3");
                 Calc.calc();
+                break;
+            case 4:
+                System.out.println("Your choice: 4");
+                GCD.gcd();
                 break;
             default: System.out.println("Unknown command, please try again.");
         }

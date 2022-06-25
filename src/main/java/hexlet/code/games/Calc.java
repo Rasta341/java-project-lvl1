@@ -7,7 +7,6 @@ public class Calc {
         String name = Engine.userName();
         System.out.println("Hello, " + name +  "!" + "\nWhat is the result of the expression?");
         
-        
         while (Engine.isWin()) {
             int operation = 1 + (int) (Math.random() * 3);
             int operand1 = (int) (Math.random() * 100);
@@ -37,6 +36,6 @@ public class Calc {
                 Engine.wrong();
             }
         }
-        System.out.println("Congratulations, " + name + "!");
+        Engine.congrats();
     }
 }

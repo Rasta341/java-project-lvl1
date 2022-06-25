@@ -21,6 +21,6 @@ public class BrainGames {
                 Engine.wrong();
             }
         }
-        System.out.println("Congratulations, " + name + "!");
+        Engine.congrats();
     }
 }

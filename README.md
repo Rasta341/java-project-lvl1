@@ -5,3 +5,4 @@
 
 "Even game" - https://asciinema.org/connect/12a7df96-df79-4874-b179-574ae88a73f6
 "Calc game" - https://asciinema.org/a/E0fy0klaiU1uQ36e1TzOocgV8
+"GCD game" - https://asciinema.org/a/aizKpODxaEMiNGVeaLdeJh5Ku
