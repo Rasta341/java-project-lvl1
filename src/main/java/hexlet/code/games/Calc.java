@@ -6,11 +6,11 @@ public class Calc {
         Engine.greet();
         String name = Engine.userName();
         System.out.println("Hello, " + name +  "!" + "\nWhat is the result of the expression?");
-        
+        final int multiplier = 3;
         while (Engine.isWin()) {
-            int operation = 1 + (int) (Math.random() * 3);
-            int operand1 = (int) (Math.random() * 100);
-            int operand2 = (int) (Math.random() * 100);
+            int operation = 1 + (int) (Math.random() * multiplier);
+            int operand1 = Engine.getRandomNum100();
+            int operand2 = Engine.getRandomNum100();
             int result = 0;
             switch (operation) {
                 case 1:
@@ -22,8 +22,9 @@ public class Calc {
                     System.out.println("Question: " + operand1 + "-" + operand2);
                     break;
                 case 3:
-                    result = (operand1 / 10) * (operand2 / 10);
-                    System.out.println("Question: " + (operand1 / 10) + "*" + (operand2 / 10));
+                    final int devider = 10;
+                    result = (operand1 / devider) * (operand2 / devider);
+                    System.out.println("Question: " + (operand1 / devider) + "*" + (operand2 / devider));
                     break;
                 default:
                     break;

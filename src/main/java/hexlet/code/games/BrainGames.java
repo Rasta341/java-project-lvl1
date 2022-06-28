@@ -7,7 +7,7 @@ public class BrainGames {
         String name = Engine.userName();
         System.out.println("Hello, " + name + "!" + "\nAnswer 'yes' if number even otherwise answer 'no'.");
         while (Engine.isWin()) {
-            int question = (int) (Math.random() * 10 + 1);
+            int question = Engine.getRandomNum10();
             System.out.println(question);
             String userAnswer = Engine.getUserAnswer();
             String correctAnswer = "yes";
