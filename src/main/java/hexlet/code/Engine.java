@@ -8,6 +8,14 @@ public class Engine {
     private static int countOfWins = 0;
     private static final int NEEDWINS = 3;
     private static String username = "";
+    public static int getRandomNum10() {
+        final int multiplier10 = 10;
+        return (int) (Math.random() * multiplier10);
+    }
+    public static int getRandomNum100() {
+        final int multiplier100 = 100;
+        return (int) (Math.random() * multiplier100);
+    }
     //Приветствие + имя игрока
     public static void greet() {
         System.out.println("Welcome to the Brain Games!" + "\nMay I have your name?");
@@ -21,13 +29,13 @@ public class Engine {
         return countOfWins < NEEDWINS;
     }
     //ответы игрока
-    public static String getUserAnswer() {
+    public static String setUserAnswer() {
         userAnswer = in.nextLine();
         System.out.println("Your answer: " + userAnswer);
         return String.valueOf(userAnswer);
     }
     //правильные ответы
-    public static String getCorrectAnswer(String str) {
+    public static String setCorrectAnswer(String str) {
         correctAnswer = str;
         return correctAnswer;
     }
@@ -43,13 +51,5 @@ public class Engine {
     }
     public static void congrats() {
         System.out.println("Congratulations, " + username + "!");
-    }
-    public static int getRandomNum10() {
-        final int multiplier10 = 10;
-        return (int) (Math.random() * multiplier10);
-    }
-    public static int getRandomNum100() {
-        final int multiplier100 = 100;
-        return (int) (Math.random() * multiplier100);
     }
 }

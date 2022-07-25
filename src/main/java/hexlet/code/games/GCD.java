@@ -18,8 +18,8 @@ public class GCD {
             int num2 = Engine.getRandomNum100();
             System.out.println("Question: " + num1 + " " + num2);
             int result = gcdResult(num1, num2);
-            Engine.getCorrectAnswer(String.valueOf(result));
-            String userAnswer = Engine.getUserAnswer();
+            Engine.setCorrectAnswer(String.valueOf(result));
+            String userAnswer = Engine.setUserAnswer();
             if (Integer.parseInt(userAnswer) == result) {
                 Engine.correct();
             } else {

@@ -7,3 +7,5 @@
 "Calc game" - https://asciinema.org/a/E0fy0klaiU1uQ36e1TzOocgV8
 "GCD game" - https://asciinema.org/a/aizKpODxaEMiNGVeaLdeJh5Ku
 "Progression game" - https://asciinema.org/a/bl5snDMJ4ZRAY58ZvftESrN55
+"Prime game" - https://asciinema.org/a/IhL7ujkVq4Yc8Gj6giPSZS6FD
+

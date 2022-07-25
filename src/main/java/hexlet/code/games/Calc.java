@@ -7,21 +7,24 @@ public class Calc {
         String name = Engine.userName();
         System.out.println("Hello, " + name +  "!" + "\nWhat is the result of the expression?");
         final int multiplier = 3;
+        final int one = 1;
+        final int two = 2;
+        final int three = 3;
         while (Engine.isWin()) {
             int operation = 1 + (int) (Math.random() * multiplier);
             int operand1 = Engine.getRandomNum100();
             int operand2 = Engine.getRandomNum100();
             int result = 0;
             switch (operation) {
-                case 1:
+                case one:
                     result = operand1 + operand2;
                     System.out.println("Question: " + operand1 + "+" + operand2);
                     break;
-                case 2:
+                case two:
                     result = operand1 - operand2;
                     System.out.println("Question: " + operand1 + "-" + operand2);
                     break;
-                case 3:
+                case three:
                     final int devider = 10;
                     result = (operand1 / devider) * (operand2 / devider);
                     System.out.println("Question: " + (operand1 / devider) + "*" + (operand2 / devider));
@@ -29,8 +32,8 @@ public class Calc {
                 default:
                     break;
             }
-            Engine.getCorrectAnswer(String.valueOf(result));
-            String userAnswer = Engine.getUserAnswer();
+            Engine.setCorrectAnswer(String.valueOf(result));
+            String userAnswer = Engine.setUserAnswer();
             if (Integer.parseInt(userAnswer) == result) {
                 Engine.correct();
             } else {

@@ -9,9 +9,9 @@ public class BrainGames {
         while (Engine.isWin()) {
             int question = Engine.getRandomNum10();
             System.out.println(question);
-            String userAnswer = Engine.getUserAnswer();
+            String userAnswer = Engine.setUserAnswer();
             String correctAnswer = "yes";
-            Engine.getCorrectAnswer(correctAnswer);
+            Engine.setCorrectAnswer(correctAnswer);
             if (question % 2 != 0) {
                 correctAnswer = "no";
             }

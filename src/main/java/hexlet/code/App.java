@@ -7,7 +7,8 @@ public class App {
             2 - Even
             3 - Calc
             4 - GCD
-            5 - Progression""");
+            5 - Progression
+            6 - Prime""");
         Cli.selectGame();
     }
 }
