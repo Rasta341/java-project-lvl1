@@ -3,9 +3,9 @@
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
-"Even game" - https://asciinema.org/connect/12a7df96-df79-4874-b179-574ae88a73f6
-"Calc game" - https://asciinema.org/a/E0fy0klaiU1uQ36e1TzOocgV8
-"GCD game" - https://asciinema.org/a/aizKpODxaEMiNGVeaLdeJh5Ku
-"Progression game" - https://asciinema.org/a/bl5snDMJ4ZRAY58ZvftESrN55
+"Even game" - https://asciinema.org/connect/12a7df96-df79-4874-b179-574ae88a73f6    
+"Calc game" - https://asciinema.org/a/E0fy0klaiU1uQ36e1TzOocgV8     
+"GCD game" - https://asciinema.org/a/aizKpODxaEMiNGVeaLdeJh5Ku      
+"Progression game" - https://asciinema.org/a/bl5snDMJ4ZRAY58ZvftESrN55      
 "Prime game" - https://asciinema.org/a/IhL7ujkVq4Yc8Gj6giPSZS6FD
 
