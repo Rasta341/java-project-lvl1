@@ -10,6 +10,7 @@ public class Prime {
             int num = Engine.getRandomNum100();
             System.out.println(num);
             String correctAnswer = "";
+            String userAnswer = Engine.setUserAnswer();
             for (int number : primeNumbers) {
                 if (number == num) {
                     correctAnswer = "yes";
@@ -19,7 +20,6 @@ public class Prime {
                 }
                 Engine.setCorrectAnswer(correctAnswer);
             }
-            String userAnswer = Engine.setUserAnswer();
             if (correctAnswer.equalsIgnoreCase(userAnswer)) {
                 Engine.correct();
             } else {
