@@ -17,16 +17,16 @@ public class Calc {
             switch (operation) {
                 case one:
                     result = operand1 + operand2;
-                    System.out.println("Question: " + operand1 + "+" + operand2);
+                    System.out.println("Question: " + operand1 + " + " + operand2);
                     break;
                 case two:
                     result = operand1 - operand2;
-                    System.out.println("Question: " + operand1 + "-" + operand2);
+                    System.out.println("Question: " + operand1 + " - " + operand2);
                     break;
                 case three:
                     final int devider = 10;
                     result = (operand1 / devider) * (operand2 / devider);
-                    System.out.println("Question: " + (operand1 / devider) + "*" + (operand2 / devider));
+                    System.out.println("Question: " + (operand1 / devider) + " * " + (operand2 / devider));
                     break;
                 default:
                     break;
