@@ -11,8 +11,7 @@ public class GCD {
     }
     public static void gcd() {
         Engine.greet();
-        String name = Engine.userName();
-        System.out.println("Hello, " + name + "!\nFind the greatest common divisor of given numbers.");
+        System.out.println("Find the greatest common divisor of given numbers.");
         while (Engine.isWin()) {
             int num1 = Engine.getRandomNum100();
             int num2 = Engine.getRandomNum100();

@@ -4,8 +4,7 @@ import hexlet.code.Engine;
 public class BrainGames {
     public static void brainGames() {
         Engine.greet();
-        String name = Engine.userName();
-        System.out.println("Hello, " + name + "!" + "\nAnswer 'yes' if number even otherwise answer 'no'.");
+        System.out.println("Answer 'yes' if number even otherwise answer 'no'.");
         while (Engine.isWin()) {
             int question = Engine.getRandomNum10();
             System.out.println(question);

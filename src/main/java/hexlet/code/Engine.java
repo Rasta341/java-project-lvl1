@@ -19,10 +19,8 @@ public class Engine {
     //Приветствие + имя игрока
     public static void greet() {
         System.out.println("Welcome to the Brain Games!" + "\nMay I have your name?");
-    }
-    public static String userName() {
-        username = in.nextLine();
-        return username;
+		username = in.nextLine();
+		System.out.println("Hello, " + username +  "!");
     }
     //условие для победы в игре
     public static boolean isWin() {

@@ -4,8 +4,7 @@ import hexlet.code.Engine;
 public class Calc {
     public static void calc() {
         Engine.greet();
-        String name = Engine.userName();
-        System.out.println("Hello, " + name +  "!" + "\nWhat is the result of the expression?");
+		System.out.println("What is the result of the expression?");
         final int multiplier = 3;
         final int one = 1;
         final int two = 2;

@@ -6,8 +6,7 @@ import java.util.List;
 public class Progression {
     public static void progression() {
         Engine.greet();
-        var name = Engine.userName();
-        System.out.println("Hello, " + name + "!\nWhat number is missing in the progression?");
+        System.out.println("What number is missing in the progression?");
         while (Engine.isWin()) {
             int x = Engine.getRandomNum10();
             int d = Engine.getRandomNum100() + 1;
