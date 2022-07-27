@@ -14,7 +14,6 @@ public class Cli {
         switch (answer) {
             case "1":
                 System.out.println("Your choice: 1");
-                System.out.println("Welcome to the Brain Games!");
 				Engine.greet();
                 break;
             case "2":
