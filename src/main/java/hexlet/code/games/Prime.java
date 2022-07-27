@@ -7,7 +7,7 @@ public class Prime {
         final int[] primeNumbers = new int[] {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53};
         while (Engine.isWin()) {
             int num = Engine.getRandomNum100();
-            System.out.println(num);
+            System.out.println("Question: " + num);
             String correctAnswer = "";
             String userAnswer = Engine.setUserAnswer();
             for (int number : primeNumbers) {

@@ -26,7 +26,7 @@ public class Progression {
             Engine.setCorrectAnswer(correctAnswer);
             arr2.remove(index);
             arr2.add(index, "..");
-            System.out.println("arr2: " + arr2);
+            System.out.println("Question: " + arr2);
             var userAnswer = Integer.parseInt(Engine.setUserAnswer());
             if (userAnswer == Integer.parseInt(correctAnswer)) {
                 Engine.correct();
