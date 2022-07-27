@@ -6,8 +6,9 @@ plugins {
 application {
     mainClass = 'hexlet.code.App'
 }
+
 run {
-    standardInput = System.in
+    standardInput(System.in)
 }
 
 group 'hexlet.code'

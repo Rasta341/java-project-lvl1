@@ -1,4 +1,5 @@
 package hexlet.code;
+
 import java.util.Scanner;
 
 public class Engine {
@@ -19,8 +20,8 @@ public class Engine {
     //Приветствие + имя игрока
     public static void greet() {
         System.out.println("Welcome to the Brain Games!" + "\nMay I have your name?");
-		username = in.nextLine();
-		System.out.println("Hello, " + username +  "!");
+        username = in.nextLine();
+        System.out.println("Hello, " + username + "!");
     }
     //условие для победы в игре
     public static boolean isWin() {
@@ -33,9 +34,8 @@ public class Engine {
         return String.valueOf(userAnswer);
     }
     //правильные ответы
-    public static String setCorrectAnswer(String str) {
+    public static void setCorrectAnswer(String str) {
         correctAnswer = str;
-        return correctAnswer;
     }
     //уведомления
     public static void correct() {
@@ -48,6 +48,8 @@ public class Engine {
             + correctAnswer + "'. \nLet's try again, " + username + "!");
     }
     public static void congrats() {
-        System.out.println("Congratulations, " + username + "!");
+        if (countOfWins >= NEEDWINS) {
+            System.out.println("Congratulations, " + username + "!");
+        }
     }
 }

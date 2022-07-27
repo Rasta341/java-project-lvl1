@@ -14,9 +14,9 @@ public class Cli {
         switch (answer) {
             case "1":
                 System.out.println("Your choice: 1");
-				Engine.greet();
+                Engine.greet();
                 break;
-            case "2":
+            case"2":
                 System.out.println("Your choice: 2");
                 BrainGames.brainGames();
                 break;

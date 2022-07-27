@@ -6,7 +6,7 @@ public class BrainGames {
         Engine.greet();
         System.out.println("Answer 'yes' if number even otherwise answer 'no'.");
         while (Engine.isWin()) {
-            int question = Engine.getRandomNum10();
+            int question = 1 + Engine.getRandomNum10();
             System.out.println("Question: " + question);
             String userAnswer = Engine.setUserAnswer();
             String correctAnswer = "yes";
@@ -18,6 +18,7 @@ public class BrainGames {
                 Engine.correct();
             } else {
                 Engine.wrong();
+                break;
             }
         }
         Engine.congrats();

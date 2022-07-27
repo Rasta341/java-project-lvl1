@@ -23,6 +23,7 @@ public class GCD {
                 Engine.correct();
             } else {
                 Engine.wrong();
+                break;
             }
         }
         Engine.congrats();

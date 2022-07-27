@@ -4,7 +4,7 @@ import hexlet.code.Engine;
 public class Calc {
     public static void calc() {
         Engine.greet();
-		System.out.println("What is the result of the expression?");
+        System.out.println("What is the result of the expression?");
         final int multiplier = 3;
         final int one = 1;
         final int two = 2;
@@ -37,6 +37,7 @@ public class Calc {
                 Engine.correct();
             } else {
                 Engine.wrong();
+                break;
             }
         }
         Engine.congrats();
