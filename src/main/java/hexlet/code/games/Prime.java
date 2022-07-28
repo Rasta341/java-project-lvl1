@@ -21,7 +21,6 @@ public class Prime {
                 Engine.correct();
             } else {
                 Engine.wrong();
-                break;
             }
         }
         Engine.congrats();
