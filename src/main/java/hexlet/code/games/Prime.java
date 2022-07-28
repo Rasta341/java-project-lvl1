@@ -11,7 +11,7 @@ public class Prime {
             System.out.println("Question: " + num);
             String correctAnswer;
             String userAnswer = Engine.setUserAnswer();
-            if (num > 1 && num % num == 0 && num % 1 == 0) {
+            if (num > 1 & num % num == 0 & num % 1 == 0) {
                 correctAnswer = "yes";
             } else {
                 correctAnswer = "no";
