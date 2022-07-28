@@ -7,11 +7,11 @@ public class Prime {
         Engine.greet();
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         while (Engine.isWin()) {
-            int num = Engine.getRandomNum10();
+            int num = Engine.getRandomNum10() + 1;
             System.out.println("Question: " + num);
             String correctAnswer;
             String userAnswer = Engine.setUserAnswer();
-            if (num % num == 0 || num % 1 == 0) {
+            if (num > 1 && num % num == 0 && num % 1 == 0) {
                 correctAnswer = "yes";
             } else {
                 correctAnswer = "no";
