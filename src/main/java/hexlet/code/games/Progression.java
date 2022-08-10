@@ -19,7 +19,7 @@ public class Progression {
             }
             Arrays.sort(arr);
             List<String> arr2 = new ArrayList<>();
-            for (int i = 0; i < arr.length; i++) {
+            for (int i = 0; i < arr.length - 1; i++) {
                 arr2.add(i, String.valueOf(arr[i]));
             }
             int index = Engine.getRandomNum10();
