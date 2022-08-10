@@ -9,17 +9,17 @@ public class Progression {
         Engine.greet();
         System.out.println("What number is missing in the progression?");
         while (Engine.isWin()) {
-            int x = Engine.getRandomNum10() + 1;
+            int x = Engine.getRandomNum10();
             int d = Engine.getRandomNum10() + 1;
             final int arrLength = 10;
             int[] arr = new int[arrLength];
             arr[0] = x;
-            for (int i = 1; i < arr.length - 1; i++) {
+            for (int i = 1; i < arr.length; i++) {
                 arr[i] = arr[i - 1] + d;
             }
             Arrays.sort(arr);
             List<String> arr2 = new ArrayList<>();
-            for (int i = 0; i < arr.length - 1; i++) {
+            for (int i = 0; i < arr.length; i++) {
                 arr2.add(i, String.valueOf(arr[i]));
             }
             int index = Engine.getRandomNum10();
