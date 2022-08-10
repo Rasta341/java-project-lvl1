@@ -11,7 +11,7 @@ public class Engine {
     private static String username = "";
     public static int getRandomNum10() {
         final int multiplier10 = 10;
-        return (int) (Math.random() * multiplier10);
+        return (int) (Math.random() * multiplier10 + 1);
     }
     public static int getRandomNum100() {
         final int multiplier100 = 100;

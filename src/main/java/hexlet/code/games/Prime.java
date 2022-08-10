@@ -12,10 +12,10 @@ public class Prime {
             System.out.println("Question: " + num);
             String correctAnswer;
             String userAnswer = Engine.setUserAnswer();
-            for (int i = 1; i <= num; i++) {
-                isPrime = num % i == 0;
+            for (int i = 2; i < num; i++) {
+                isPrime = num % i != 0 & num % 2 != 0;
             }
-            if (isPrime & num > 1 & num % num == 0) {
+            if (isPrime) {
                 correctAnswer = "yes";
             } else {
                 correctAnswer = "no";
