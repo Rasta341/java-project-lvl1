@@ -10,8 +10,9 @@ public class Engine {
     private static final int NEEDWINS = 3;
     private static String username = "";
     public static int getRandomNum10() {
-        final int multiplier10 = 10;
-        return (int) (Math.random() * multiplier10 + 1);
+        final int A = 1;
+        final int B = 9;
+        return A + (int) (Math.random() * B);
     }
     public static int getRandomNum100() {
         final int multiplier100 = 100;

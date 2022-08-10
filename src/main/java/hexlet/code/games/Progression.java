@@ -8,8 +8,8 @@ public class Progression {
         Engine.greet();
         System.out.println("What number is missing in the progression?");
         while (Engine.isWin()) {
-            int x = Engine.getRandomNum10();
-            int d = Engine.getRandomNum10() + 1;
+            int x = Engine.getRandomNum10() - 1;
+            int d = Engine.getRandomNum10();
             final int arrLength = 10;
             int[] arr = new int[arrLength];
             arr[0] = x;
