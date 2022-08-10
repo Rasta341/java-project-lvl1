@@ -17,6 +17,18 @@ public class Engine {
         final int multiplier100 = 100;
         return (int) (Math.random() * multiplier100);
     }
+    public static boolean isPrime(int number) {
+        if (number < 2) {
+            return false;
+        }
+        double s = Math.sqrt(number);
+        for (int i = 2; i <= s; i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
     //Приветствие + имя игрока
     public static void greet() {
         System.out.println("Welcome to the Brain Games!" + "\nMay I have your name?");
