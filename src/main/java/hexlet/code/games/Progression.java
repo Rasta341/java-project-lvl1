@@ -37,7 +37,6 @@ public class Progression {
                 Engine.correct();
             } else {
                 Engine.wrong();
-                break;
             }
         }
         Engine.congrats();
