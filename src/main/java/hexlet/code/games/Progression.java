@@ -3,7 +3,6 @@ import hexlet.code.Engine;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-//import org.apache.commons.lang3.ArrayUtils;
 public class Progression {
     public static void progression() {
         Engine.greet();
@@ -37,6 +36,7 @@ public class Progression {
                 Engine.correct();
             } else {
                 Engine.wrong();
+                break;
             }
         }
         Engine.congrats();
